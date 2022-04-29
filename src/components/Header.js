@@ -7,9 +7,14 @@ export function Header({ onClickCart }) {
 
   return (
     <header className="d-flex justify-between align-center p-40">
-      <Link to={"/"}>
+      <Link to={"/React-Sneakers/"}>
         <div className="d-flex align-center">
-          <img width={40} height={40} src="img/logo.png" alt="" />
+          <img
+            width={40}
+            height={40}
+            src="React-Sneakers/img/logo.png"
+            alt=""
+          />
           <div>
             <h3>REACT SNEAKERS</h3>
             <p className="opacity-5">Магазин лучших кроссовок</p>
@@ -19,20 +24,30 @@ export function Header({ onClickCart }) {
 
       <ul className="d-flex">
         <li onClick={onClickCart} className="mr-30 cu-p">
-          <img width={18} height={18} src="img/cart.svg" alt="Корзина" />
+          <img
+            width={18}
+            height={18}
+            src="React-Sneakers/img/cart.svg"
+            alt="Корзина"
+          />
           <span>{totalPrice} руб.</span>
         </li>
         <li className="cu-p mr-20">
-          <Link to={"/favorites"}>
-            <img width={18} height={18} src="img/heart.svg" alt="Закладки" />
-          </Link>
-        </li>
-        <li>
-          <Link to={"/orders"}>
+          <Link to={"React-Sneakers/favorites"}>
             <img
               width={18}
               height={18}
-              src="img/user.svg"
+              src="React-Sneakers/img/heart.svg"
+              alt="Закладки"
+            />
+          </Link>
+        </li>
+        <li>
+          <Link to={"React-Sneakers/orders"}>
+            <img
+              width={18}
+              height={18}
+              src="React-Sneakers/img/user.svg"
               alt="Пользователь"
             />
           </Link>
